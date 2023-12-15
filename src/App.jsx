@@ -9,7 +9,7 @@ const App = () => {
       bg_color:"ffffff",
       heading_color:"#000a19",
       para_color:"#504e4d",
-      h_color:"#0a043c",
+      hero_heading_color:"#221b5f",
       white_color:"#ffffff",
       btn_hover_bg_color:"#003b99",
       btn_box_shadow:"rgba(100, 100, 111, 0.2) 0px 7px 29px 0px"

@@ -1,8 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:wght@200;300;400;600&family=Kalam:wght@300&family=Poppins:wght@100;300;400&family=Spectral:wght@200;300;400;600&family=Urbanist:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
 //base rule
 *{
     padding: 0;
@@ -24,7 +22,8 @@ p,li,.nav-link{
     font-size: 1.8rem;
     letter-spacing: 0.1rem;
     font-weight: 400;
-    color: ${({ theme }) => theme.colors.para_color};
+    line-height: 1.5;
+    /* color: ${({ theme }) => theme.colors.para_color}; */
 }
 .nav-link{
     text-decoration: none;
