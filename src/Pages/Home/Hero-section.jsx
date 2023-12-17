@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 
-const Home = () => {
+const HeroSection = () => {
   return (
     <Wrapper>
       <main className="main">
@@ -129,4 +129,4 @@ main{
   
 `
 
-export default Home
+export default HeroSection

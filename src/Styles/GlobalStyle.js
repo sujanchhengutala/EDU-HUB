@@ -11,6 +11,7 @@ const GlobalStyle = createGlobalStyle`
 html{
     font-size: 62.5%; /* 1rem=10px */
     
+    
 }
 
 
@@ -38,13 +39,29 @@ li{
 .container{
     max-width: 130rem; //  1rem = 10px then 142rem= 1420px
     margin: 0 auto;
-    padding: 9.6rem 2.4rem;
+    padding: 6.5rem 2.4rem;
 }
 .grid{
     display: grid;
 }
 .grid-two--cols{
     grid-template-columns: repeat(2, 1fr);
+}
+.grid-three--cols{
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.section_common_heading{
+    font-size:3.2rem;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.section_common_subheading{
+color: ${({theme})=>theme.colors.heading_color};
+}
+.section_common__title{
+    font-size:2rem;
+    margin: 2.4rem 0 1.2rem 0;
 }
 .btn{
     padding: 1.2rem 3.2rem;

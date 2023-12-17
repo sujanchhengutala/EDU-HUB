@@ -43,12 +43,11 @@ const Header = () => {
 
 const Wrapper = styled.header`
   .section-navbar {
-  /* z-index: 999; */
     width: 100%;
-  
-  
     /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    
+
     .container {
       display: flex;
       justify-content: space-between;
