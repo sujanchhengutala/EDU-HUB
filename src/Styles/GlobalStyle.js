@@ -39,7 +39,7 @@ li{
 .container{
     max-width: 130rem; //  1rem = 10px then 142rem= 1420px
     margin: 0 auto;
-    padding: 6.5rem 2.4rem;
+    padding: 6rem 2.4rem;
 }
 .grid{
     display: grid;
@@ -49,6 +49,10 @@ li{
 }
 .grid-three--cols{
     grid-template-columns: repeat(3, 1fr);
+}
+.grid-four-cols{
+    grid-template-columns: repeat(4, 1fr);
+
 }
 
 .section_common_heading{

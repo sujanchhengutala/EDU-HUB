@@ -29,5 +29,60 @@ export const aboutData = [{
 },
 ]
 
-//============About card data start here=====================//
+//============About card data end here=====================//
+
+//============Course card data start here=====================//
+
+
+export const courseData = [{
+  image: "./images/html.svg" ,
+  title:"HTML",
+  description:"We start by learning what you need. We look at what's new.",
+  alt:""
+},
+{
+  image:"./images/css.svg",
+  title:"CSS",
+  description:"Next, we make the lessons, We make them fun and intresting for.",
+  alt:""
+},
+{
+  image:"./images/javascript.svg",
+  title:"Javascript",
+  description:"After that, we turn the lession into things you can use online.",
+  alt:""
+},
+{
+  image: "./images/database.svg" ,
+  title:"HTML",
+  description:"We start by learning what you need. We look at what's new.",
+  alt:""
+},
+{
+  image:"./images/css.svg",
+  title:"CSS",
+  description:"Next, we make the lessons, We make them fun and intresting.",
+  alt:""
+},
+{
+  image:"./images/javascript.svg",
+  title:"Javascript",
+  description:"After that, we turn the lession into things you can use online. .",
+  alt:""
+},
+{
+  image: "./images/html.svg" ,
+  title:"HTML",
+  description:"We start by learning what you need. We look at what's new.",
+  alt:""
+},
+{
+  image:"./images/database.svg",
+  title:"CSS",
+  description:"Next, we make the lessons, We make them fun and intresting for.",
+  alt:""
+},
+]
+
+
 

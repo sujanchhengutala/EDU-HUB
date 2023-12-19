@@ -2,6 +2,7 @@
 // import styled from "styled-components";
 
 import About from "../About"
+import Course from "../Course/Course"
 import HeroSection from "./Hero-section"
 
 // const Home = () => {
@@ -141,6 +142,7 @@ const Home = () => {
     <>
     <HeroSection />
     <About />
+    <Course />
     </>
   )
 }
