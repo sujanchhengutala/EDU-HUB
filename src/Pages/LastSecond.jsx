@@ -64,7 +64,7 @@ const Wrapper = styled.div`
   }
   @media (width<= ${({theme})=>theme.size.lg}){
     .section-contact--homepage{
-      width: 50%;
+      width: 70%;
       .grid-two--cols{
         grid-template-columns: 1fr;
         .contact-content{
