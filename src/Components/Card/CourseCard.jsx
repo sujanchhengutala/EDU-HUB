@@ -14,12 +14,16 @@ const CourseCard = ({ curElem }) => {
 const Wrapper = styled.div`
 .icon{
     img{
-        width:10rem;
-        height: 10rem;
+        width:9.5rem;
+        height: 9.5rem;
         padding: 2.4rem;
-        background-color: ${({theme})=> theme.colors.supporting_color};
+        background-color:#a6cbff;
         border-radius:50%;
+        filter: sepia(10%);
         
+    }
+    p{
+      justify-content: justify;
     }
 }
     

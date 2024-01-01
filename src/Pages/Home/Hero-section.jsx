@@ -26,7 +26,7 @@ const HeroSection = () => {
         </div>
         <div className="section-hero-image">
           
-            <img src="./images/read.png" alt="" />
+            <img src="./images/read.png" alt="hello" />
           
         </div>
 
@@ -126,6 +126,72 @@ main{
   }
 }
 
+
+@media (width<= ${({theme})=>theme.size.lg}) {
+    .main{
+    .section-hero{
+      height: auto;
+      padding-bottom: 5rem;
+    .grid-two--cols{
+      grid-template-columns: 1fr;
+      .section-hero--content{
+        order: 2;
+      }
+      .section-hero-image{
+        order: 1;
+        display: grid;
+        place-items: center;
+        img{
+          width: 50%;
+        }
+      }
+    }
+  }
+}
+    
+    
+}
+@media (width<= ${({theme})=>theme.size.md /*768px*/}) {
+  .main{
+    .section-hero{
+    .grid-two--cols{
+      .section-hero-image{
+        img{
+          width: 40%;
+        }
+      }
+      .section-hero--content{
+        .hero-heading{
+          font-size: 4rem;
+        }
+
+      }
+    }
+  }
+}
+    
+}
+@media (width<= ${({theme})=>theme.size.sm /*576*/}) {
+  .main{
+    .section-hero{
+    .grid-two--cols{
+      .section-hero-image{
+        img{
+          width: 35%;
+        }
+      }
+      .section-hero--content{
+        .hero-heading{
+          font-size: 3.5rem;
+        }
+
+      }
+    }
+  }
+}
+    
+    
+}
   
 `
 

@@ -2,6 +2,7 @@ import AboutCard from "../Components/Card/AboutCard"
 import Heading from "../Components/Heading"
 import { aboutData } from "../Data/Data"
 import styled from "styled-components";
+// import LastSecond from "./LastSecond";
 
 
 const About = () => {
@@ -21,12 +22,19 @@ const About = () => {
             }
 
         </div>
+        {/* <LastSecond /> */}
 
     </section>
     </Wrapper>
   )
 }
 const Wrapper = styled.section`
+.section_about{
+    .container:first-child{
+    padding: 5.4rem 2.4rem 2.4rem 2.4rem;
+
+  }
+}
 .section_about img{
     padding: 2.4rem;
     background-color: ${({theme})=>theme.colors.supporting_color};
@@ -43,6 +51,32 @@ const Wrapper = styled.section`
 }
 
 
+@media (width<= ${({theme})=>theme.size.lg}) {
+.section_about{
+    .grid-three--cols{
+        grid-template-columns:1fr;
+        .about_div{
+            .icon{
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            }
+            text-align: left;
+
+        }
+       
+    }
+}
+
+}
+@media (width<= ${({theme})=>theme.size.md}) {
+
+    
+}
+@media (width<= ${({theme})=>theme.size.sm}) {
+
+
+}
     
 `
 

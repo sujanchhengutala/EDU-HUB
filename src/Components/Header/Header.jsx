@@ -45,16 +45,18 @@ const Wrapper = styled.header`
   .section-navbar {
     width: 100%;
     /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
     
 
     .container {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 0.5rem 0;
+      padding: 1.8rem 2.4rem;
 
       .navbar{
+      
         ul{
             display: flex;
             gap: 3.2rem;
@@ -63,7 +65,7 @@ const Wrapper = styled.header`
             li{
                 .nav-link{
                     text-transform: uppercase;
-                    color: ${({theme})=>theme.colors.heading_color};
+                    color: ${({theme})=>theme.colors.hero_heading_color};
                     font-size: 1.6rem;
                     font-weight: 530;
                     display: inline-block;
@@ -88,6 +90,25 @@ const Wrapper = styled.header`
       }
     }
   }
+
+  @media (width<= ${({theme})=>theme.size.md}) {
+.section-navbar{
+  .container{
+    display: flex;
+  flex-direction: column;
+  .navbar-brand{
+    text-align: center;
+    /* margin-bottom: 1.4rem; */
+  }
+  .navbar{
+    margin: 3rem;
+  }
+  }
+
+}
+    
+    
+}
 `;
 
 export default Header;

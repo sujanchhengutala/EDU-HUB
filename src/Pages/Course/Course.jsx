@@ -29,19 +29,41 @@ const Course = () => {
 
 const Wrapper = styled.div`
 .section-course{
+  background-color: ${({theme})=>theme.colors.bg_color};
+  .container:first-child{
+    padding: 5.4rem 2.4rem 2.4rem 2.4rem;
+  }
 
 .grid{
   gap: 3.2rem;
   .course-div{
-    
-    padding: 3.2rem;
+    box-shadow: ${({theme})=>theme.colors.btn_box_shadow};
+    background-color: ${({theme})=>theme.colors.white_color};
+    /* border-radius:  10rem 2rem 10rem 2rem; */
+    padding: 4.2rem 4.5rem;
+    backdrop-filter: blur(10px);
+  }
+  .course-div:nth-child(odd){
+    border-radius:  10rem 2rem 10rem 2rem;
+  }
+  .course-div:nth-child(even){
+    border-radius: 2rem 10rem 2rem 8rem ;
   }
   .course-div:hover{
     box-shadow: ${({theme})=>theme.colors.btn_box_shadow};
-    border-radius: 2rem;
+    /* border-radius: 2rem 10rem 2rem 8rem ; */
   }
 }
 
+}
+
+
+@media (width<= ${({theme})=>theme.size.lg}) {
+.section-course{
+    .grid-four-cols{
+        grid-template-columns:1fr;
+    }
+}
 }
 
     

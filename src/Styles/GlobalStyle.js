@@ -1,5 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 
+
 const GlobalStyle = createGlobalStyle`
 //base rule
 *{
@@ -18,7 +19,7 @@ html{
 h1,h2,h3,h4,h5,h6{
     font-family: "Poppins", sans-serif;
 }
-p,li,.nav-link{
+p,li, label,.nav-link{
     font-family: "Urbanist", sans-serif;
     font-size: 1.8rem;
     letter-spacing: 0.1rem;
@@ -39,7 +40,7 @@ li{
 .container{
     max-width: 130rem; //  1rem = 10px then 142rem= 1420px
     margin: 0 auto;
-    padding: 6rem 2.4rem;
+    padding: 9.4rem 2.4rem;
 }
 .grid{
     display: grid;
@@ -79,6 +80,62 @@ color: ${({theme})=>theme.colors.heading_color};
         box-shadow: ${({theme})=>theme.colors. btn_box_shadow};
         cursor: pointer;
     }
+}
+
+::-webkit-scrollbar {
+  width: 1rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background:${({theme})=>theme.colors.supporting_color};
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: ${({theme})=>theme.colors.main_color};
+  border-radius: 50px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: ${({theme})=>theme.colors.heading_color};
+}
+
+//?media query start
+
+@media (width<= ${({theme})=>theme.size.xxl}) {
+    html{
+        font-size: 56.25%;
+    }
+    
+}
+@media (width<= ${({theme})=>theme.size.xl}) {
+    html{
+        font-size: 54%;
+    }
+    
+}
+@media (width<= ${({theme})=>theme.size.lg}) {
+    html{
+        font-size: 50%;
+    }
+    
+    
+}
+@media (width<= ${({theme})=>theme.size.md}) {
+    html{
+        font-size: 46.875%;
+    }
+    
+    
+}
+@media (width<= ${({theme})=>theme.size.sm}) {
+    html{
+        font-size: 46.875%;
+    }
+    
+    
 }
 
 

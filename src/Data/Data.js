@@ -43,13 +43,13 @@ export const courseData = [{
 {
   image:"./images/css.svg",
   title:"CSS",
-  description:"Next, we make the lessons, We make them fun and intresting for.",
+  description:"Next, we make the lessons, We make them fun and.",
   alt:""
 },
 {
   image:"./images/javascript.svg",
   title:"Javascript",
-  description:"After that, we turn the lession into things you can use online.",
+  description:"We start by learning what you need. We look at what's new.",
   alt:""
 },
 {
@@ -61,13 +61,13 @@ export const courseData = [{
 {
   image:"./images/css.svg",
   title:"CSS",
-  description:"Next, we make the lessons, We make them fun and intresting.",
+  description:"We start by learning what you need. We look at what's new.",
   alt:""
 },
 {
   image:"./images/javascript.svg",
   title:"Javascript",
-  description:"After that, we turn the lession into things you can use online. .",
+  description:"We start by learning what you need. We look at what's new.",
   alt:""
 },
 {
@@ -79,10 +79,115 @@ export const courseData = [{
 {
   image:"./images/database.svg",
   title:"CSS",
-  description:"Next, we make the lessons, We make them fun and intresting for.",
+  description:"We start by learning what you need. We look at what's new.",
   alt:""
 },
 ]
 
 
+//================================why choose us part start here =====================
 
+//Odd
+export const whyChooseOdd = [{
+  number:1,
+  title:"Expert Instructor",
+  description:"Learns from experienced teachers who are pationated for sharing their knowledge and guiding you towards successful learning journy."
+
+},
+
+{
+  number:2,
+  title:"Expert Instructor",
+  description:"Learns from experienced teachers who are pationated for sharing their knowledge and guiding you towards successful learning journy."
+
+},
+
+{
+  number:3,
+  title:"Expert Instructor",
+  description:"Learns from experienced teachers who are pationated for sharing their knowledge and guiding you towards successful learning journy."
+
+},
+]
+
+
+//Even
+
+export const whyChooseEven = [
+  {
+    number:4,
+    title:"Expert Instructor",
+    description:"Learns from experienced teachers who are pationated for sharing their knowledge and guiding you towards successful learning journy."
+  
+  },
+  
+  {
+    number:5,
+    title:"Expert Instructor",
+    description:"Learns from experienced teachers who are pationated for sharing their knowledge and guiding you towards successful learning journy."
+  
+  },
+  
+  {
+    number:6,
+    title:"Expert Instructor",
+    description:"Learns from experienced teachers who are pationated for sharing their knowledge and guiding you towards successful learning journy."
+  
+  },]
+
+
+
+//================================why choose us part end here =====================
+
+
+
+
+//?============================== blogs data start here=============================
+import { RiCalendar2Line } from "react-icons/ri";
+import { RiArrowRightLine } from "react-icons/ri";
+
+export const blogData = [{
+  fig:"https://images.pexels.com/photos/1181298/pexels-photo-1181298.jpeg?auto=compress&cs=tinysrgb&w=600",
+  icon:{
+    cal:RiCalendar2Line,
+    arr:RiArrowRightLine
+
+
+  },
+  title:"code your first react app"
+
+},
+{
+  fig:"https://images.pexels.com/photos/574069/pexels-photo-574069.jpeg?auto=compress&cs=tinysrgb&w=600",
+  icon:{
+    cal:RiCalendar2Line,
+    arr:RiArrowRightLine
+
+
+  },
+  title:"code your first react app"
+
+},
+{
+  fig:"https://images.pexels.com/photos/1181298/pexels-photo-1181298.jpeg?auto=compress&cs=tinysrgb&w=600",
+  icon:{
+    cal:RiCalendar2Line,
+    arr:RiArrowRightLine
+
+
+  },
+  title:"code your first react app"
+
+},
+{
+  fig:"https://images.pexels.com/photos/1181298/pexels-photo-1181298.jpeg?auto=compress&cs=tinysrgb&w=600",
+  icon:{
+    cal:RiCalendar2Line,
+    arr:RiArrowRightLine
+
+
+  },
+  title:"code your first react app"
+
+},
+]
